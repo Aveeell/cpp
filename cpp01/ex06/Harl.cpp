@@ -40,5 +40,5 @@ void Harl::complain(std::string level)
 			return ;
 		}
 	}
-	std::cout << "What does it mean \"" << level  << "\"?"<< std::endl;;
+	std::cout << "What does it mean \"" << level  << "\"?"<< std::endl;
 }
