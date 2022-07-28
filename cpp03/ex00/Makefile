@@ -1,17 +1,14 @@
-NAME = bsp
+NAME = ClapTrap
 
 CLFAGS = -Wall -Wextra -Werror -std=c++98
 CC = c++
 RM = rm -f
 
 SRCS =	main.cpp \
-		Fixed.cpp \
-		bsp.cpp \
-		Point.cpp \
+		ClapTrap.cpp \
 
 DEPENDENSES =	Makefile \
-				Fixed.hpp \
-				Point.hpp \
+				ClapTrap.hpp \
 
 OBJ := $(SRCS:%.cpp=%.o)
 
