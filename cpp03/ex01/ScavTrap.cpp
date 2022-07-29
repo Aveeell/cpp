@@ -50,7 +50,7 @@ void ScavTrap::attack(const std::string &target)
 {
 	if(energy > 0 && health > 0)
 	{
-		std::cout << name << " attacks " << target << ", causing " << damage << " point of damage";
+		std::cout << name << " BOOOM " << target << " FOR " << damage << " DAMAGE";
 		std::cout << std::endl;
 		energy--;
 	}

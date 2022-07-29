@@ -2,7 +2,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "Constructor for noname" << std::endl;
+	std::cout << "CLAPTRAP Constructor for noname" << std::endl;
 	name = "noname";
 	health = 10;
 	energy = 10;
@@ -11,7 +11,7 @@ ClapTrap::ClapTrap()
 
 ClapTrap::ClapTrap(std::string str)
 {
-	std::cout << "Constructor for " << str << std::endl;
+	std::cout << "CLAPTRAP Constructor for " << str << std::endl;
 	name = str;
 	health = 10;
 	energy = 10;
@@ -20,13 +20,13 @@ ClapTrap::ClapTrap(std::string str)
 
 ClapTrap::ClapTrap(const ClapTrap &old)
 {
-	std::cout << "copy Constructor" << std::endl;
+	std::cout << "CLAPTRAP copy Constructor" << std::endl;
 	this->name = old.name;
 }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap &old)
 {
-	std::cout << "overload = for " << this->name << std::endl;
+	std::cout << "CLAPTRAP overload = for " << this->name << std::endl;
 	if(this == &old)
 		return *this;
 	this->name = old.name;
@@ -38,7 +38,7 @@ ClapTrap& ClapTrap::operator=(const ClapTrap &old)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "Destructor for " << this->name << std::endl << std::endl;
+	std::cout << "CLAPTRAP Destructor for " << this->name << std::endl << std::endl;
 }
 
 void ClapTrap::attack(const std::string &target)
