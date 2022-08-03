@@ -10,6 +10,7 @@ SRCS =	main.cpp \
 		ShrubberyCreationForm.cpp \
 		RobotomyRequestForm.cpp \
 		PresidentialPardonForm.cpp \
+		Intern.cpp \
 
 DEPENDENSES =	Makefile \
 				Bureaucrat.hpp \
@@ -17,6 +18,7 @@ DEPENDENSES =	Makefile \
 				ShrubberyCreationForm.hpp \
 				RobotomyRequestForm.hpp \
 				PresidentialPardonForm.hpp \
+				Intern.hpp \
 
 OBJ := $(SRCS:%.cpp=%.o)
 
