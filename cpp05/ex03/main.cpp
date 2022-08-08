@@ -1,51 +1,32 @@
 #include "Bureaucrat.hpp"
-#include "RobotomyRequestForm.hpp"
-#include "ShrubberyCreationForm.hpp"
-#include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 int main()
 {
 	Bureaucrat senior("senior", 1);
-	Bureaucrat middle("middle", 50);
-	Bureaucrat junior("junior", 100);
-	Bureaucrat intern("intern", 150);
+	Intern intern;
 
-	ShrubberyCreationForm tree("tree");
-	RobotomyRequestForm robotomy("robotomy");
-	PresidentialPardonForm pardon("pardon");
-
-	std::cout << std::endl << "----------------------------------" << std::endl;
-	std::cout << intern << junior << tree << std::endl;
-	
-	intern.singForm(tree);
-	junior.executeForm(tree);
-	junior.singForm(tree);
-	intern.executeForm(tree);
-	junior.executeForm(tree);
-	std::cout << "----------------------------------" << std::endl;
-
-	std::cout << std::endl << "----------------------------------" << std::endl;
-	std::cout << junior << middle << senior << robotomy << std::endl;
-
-	junior.singForm(robotomy);
-	junior.executeForm(robotomy);
-	middle.executeForm(robotomy);
-	middle.singForm(robotomy);
-	junior.executeForm(robotomy);
-	middle.executeForm(robotomy);
 	std::cout << std::endl;
-	senior.executeForm(robotomy);
-	std::cout << "----------------------------------" << std::endl;
+	Form *shrubbery(intern.makeForm("shrubbery creation", "shrubbery"));
+	Form *robotomy(intern.makeForm("rObOtOmY REQUest", "robotomy"));
+	Form *pardon(intern.makeForm("PRESIDENTIAL PARDON", "pardon"));
+	Form *invalid;
 
-	std::cout << std::endl << "----------------------------------" << std::endl;
-	std::cout << middle << senior << pardon << std::endl;
-
-	middle.executeForm(pardon);
-	middle.singForm(pardon);
-	senior.singForm(pardon);
-	middle.executeForm(pardon);
+	invalid = intern.makeForm("invalid type", "invalid");
 	std::cout << std::endl;
-	senior.executeForm(pardon);
-	std::cout << "----------------------------------" << std::endl;
+
+	std::cout << "-----------------shrubbery-----------------" << std::endl;
+	senior.singForm(*shrubbery);
+	senior.executeForm(*shrubbery);
+	std::cout << std::endl;
+
+	std::cout << "-----------------robotomy-----------------" << std::endl;
+	senior.singForm(*robotomy);
+	senior.executeForm(*robotomy);
+	std::cout << std::endl;
+
+	std::cout << "-----------------pardon-----------------" << std::endl;
+	senior.singForm(*pardon);
+	senior.executeForm(*pardon);
 	return 0;
 }

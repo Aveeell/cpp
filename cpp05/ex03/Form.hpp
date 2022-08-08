@@ -25,6 +25,7 @@ class Form
 		std::string getTitle() const;
 		int getToSign() const;
 		int getToExecute() const;
+		std::string getTitle();
 
 		virtual void execute(const Bureaucrat &executor) const;
 

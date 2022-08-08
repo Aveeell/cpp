@@ -79,3 +79,8 @@ void Form::execute(const Bureaucrat &executor) const
 	(void)executor;
 	return ;
 }
+
+std::string Form::getTitle()
+{
+	return this->title;
+}

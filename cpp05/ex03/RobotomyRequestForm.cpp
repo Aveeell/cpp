@@ -38,8 +38,9 @@ void RobotomyRequestForm::execute(const Bureaucrat &executor) const
 	this->Form::beExecuted(executor);
 	std::cout << "SOME DRILLING NOISES" << std::endl;
 
+	srand(time(0));
 	if((int)rand() % 2)
-		std::cout << "Robotomy seccessed" << std::endl;
+		std::cout << "Robotomy successed" << std::endl;
 	else
 		std::cout << "Robotomy failed" << std::endl;
 }

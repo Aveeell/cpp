@@ -1,4 +1,4 @@
-NAME = exec
+NAME = intern
 
 CLFAGS = -Wall -Wextra -Werror -std=c++98
 CC = c++
