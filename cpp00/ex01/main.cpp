@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/08 11:50:42 by jerrok            #+#    #+#             */
+/*   Updated: 2022/08/08 11:50:43 by jerrok           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "PhoneBook.hpp"
 
 int main()
@@ -15,8 +27,6 @@ int main()
 			phoneBook.add();
 		else if(str == "SEARCH")
 			phoneBook.search();
-		else if(str == "FILL")
-			phoneBook.fill();
 		else
 			if(str != "EXIT")
 				std::cout << "Wrong command, try again" << std::endl;

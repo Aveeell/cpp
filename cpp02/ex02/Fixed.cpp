@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/08 12:01:15 by jerrok            #+#    #+#             */
+/*   Updated: 2022/08/08 12:59:51 by jerrok           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.hpp"
 #include <cmath>
 
@@ -82,53 +94,57 @@ float Fixed::operator/ (Fixed fixed) const
 //----------------------- increment/decrement ----------------------------------
 Fixed Fixed::operator++ ()
 {
-	this->value++;
+	++this->value;
 	return *this;
 }
 
 Fixed Fixed::operator-- ()
 {
-	this->value--;
+	--this->value;
 	return *this;
 }
 
 Fixed Fixed::operator++ (int)
 {
 	Fixed temp = *this;
-	++this->value;
+	this->value++;
 	return temp;
 }
 
 Fixed Fixed::operator-- (int)
 {
 	Fixed temp = *this;
-	--this->value;
+	this->value--;
 	return temp;
 }
 //------------------------------------------------------------------------------
-Fixed &Fixed::min(Fixed &one, Fixed &two)
+Fixed& Fixed::min(Fixed &one, Fixed &two)
 {
+	std::cout << "Fixed& min || ";
 	if(one.toFloat() <= two.toFloat())
 		return one;
 	return two;
 }
 
-const Fixed &Fixed::min(const Fixed &one, const Fixed &two)
+const Fixed& Fixed::min(const Fixed &one, const Fixed &two)
 {
+	std::cout << "const Fixed& min || ";
 	if(one.toFloat() <= two.toFloat())
 		return one;
 	return two;
 }
 
-Fixed &Fixed::max(Fixed &one, Fixed &two)
+Fixed& Fixed::max(Fixed &one, Fixed &two)
 {
+	std::cout << "Fixed& max || ";
 	if(one.toFloat() >= two.toFloat())
 		return one;
 	return two;
 }
 
-const Fixed &Fixed::max(const Fixed &one, const Fixed &two)
+const Fixed& Fixed::max(const Fixed &one, const Fixed &two)
 {
+	std::cout << "const Fixed& max || ";
 	if(one.toFloat() >= two.toFloat())
 		return one;
 	return two;
@@ -136,13 +152,11 @@ const Fixed &Fixed::max(const Fixed &one, const Fixed &two)
 //------------------------------------------------------------------------------
 int Fixed::getRawBits() const
 {
-	std::cout << "getRawBits from " << this << std::endl;
 	return this->value;
 }
 
 void Fixed::setRawBits(int raw)
 {
-	std::cout << "setRawBits to " << this << std::endl;
 	this->value = raw;
 }
 

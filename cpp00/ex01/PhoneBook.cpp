@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/08 11:47:33 by jerrok            #+#    #+#             */
+/*   Updated: 2022/08/08 11:50:50 by jerrok           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "PhoneBook.hpp"
 #include <iomanip>
 
@@ -22,7 +34,7 @@ void PhoneBook::add()
 	std::string str;
 	static int i = 0;
 	
-	std::cout << i << std::endl;
+	std::cout << "new contact pos: "<< i + 1 << std::endl;
 	contacts[i].setIndex(i + 1);
 	std::cout << "Enter first name:" << std::endl;
 	std::getline(std::cin, str);
@@ -104,7 +116,7 @@ void PhoneBook::search()
 			std::cout << "-";
 	}
 	std::cout << std::endl;
-	for(int i = 0; contacts[i].getIndex(); i++)
+	for(int i = 0; contacts[i].getIndex() > 0 && contacts[i].getIndex() < 9; i++)
 	{
 		std::cout << std::setw(10) << contacts[i].getIndex() << "|";
 		str = contacts[i].getFisrstName();
@@ -119,73 +131,19 @@ void PhoneBook::search()
 
 		max = i + 1;
 	}
-	std::cout << "Enter index" << std::endl;
-	std::getline(std::cin, str);
-	index = atoi(str.c_str());
-	while(index < 1 || index > max)
+	if(contacts[0].getIndex())
 	{
-		if(std::cin.eof())
-			exit(1);
-		std::cout << "Index out of range, try again" << std::endl;
+		std::cout << "Enter index" << std::endl;
 		std::getline(std::cin, str);
 		index = atoi(str.c_str());
+		while(index < 1 || index > max)
+		{
+			if(std::cin.eof())
+				exit(1);
+			std::cout << "Index out of range, try again" << std::endl;
+			std::getline(std::cin, str);
+			index = atoi(str.c_str());
+		}
+		show(index - 1);
 	}
-	show(index - 1);
-}
-
-void PhoneBook::fill()
-{
-	contacts[0].setIndex(1);
-	contacts[1].setIndex(2);
-	contacts[2].setIndex(3);
-	contacts[3].setIndex(4);
-	contacts[4].setIndex(5);
-	contacts[5].setIndex(6);
-	contacts[6].setIndex(7);
-	contacts[7].setIndex(8);
-
-	contacts[0].setFirstName("pavel");
-	contacts[1].setFirstName("jimmie");
-	contacts[2].setFirstName("dimasik");
-	contacts[3].setFirstName("iluwa");
-	contacts[4].setFirstName("pavel");
-	contacts[5].setFirstName("jimmie");
-	contacts[6].setFirstName("dimasik");
-	contacts[7].setFirstName("iluwa");
-
-	contacts[0].setLastName("gorbach");
-	contacts[1].setLastName("errok");
-	contacts[2].setLastName("garbil");
-	contacts[3].setLastName("korotkivvvv");
-	contacts[4].setLastName("gorbach");
-	contacts[5].setLastName("errok");
-	contacts[6].setLastName("garbil");
-	contacts[7].setLastName("korotkivvvv");
-
-	contacts[0].setNickname("aveeell");
-	contacts[1].setNickname("jerrok");
-	contacts[2].setNickname("ebaldak");
-	contacts[3].setNickname("iluwa_eb");
-	contacts[4].setNickname("aveeell");
-	contacts[5].setNickname("jerrok");
-	contacts[6].setNickname("ebaldak");
-	contacts[7].setNickname("iluwa_eb");
-
-	contacts[0].setPhoneNumber("1");
-	contacts[1].setPhoneNumber("2");
-	contacts[2].setPhoneNumber("3");
-	contacts[3].setPhoneNumber("4");
-	contacts[4].setPhoneNumber("1");
-	contacts[5].setPhoneNumber("2");
-	contacts[6].setPhoneNumber("3");
-	contacts[7].setPhoneNumber("4");
-
-	contacts[0].setDarkestSecret("bassist");
-	contacts[1].setDarkestSecret("pavel");
-	contacts[2].setDarkestSecret("pointer");
-	contacts[3].setDarkestSecret("guitarist");
-	contacts[4].setDarkestSecret("1");
-	contacts[5].setDarkestSecret("2");
-	contacts[6].setDarkestSecret("3");
-	contacts[7].setDarkestSecret("4");
 }
