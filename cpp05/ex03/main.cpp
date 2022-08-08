@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:56:48 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 11:56:49 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/08 15:06:54 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,9 @@ int main()
 	std::cout << "-----------------pardon-----------------" << std::endl;
 	senior.singForm(*pardon);
 	senior.executeForm(*pardon);
+
+	delete shrubbery;
+	delete robotomy;
+	delete pardon;
 	return 0;
 }

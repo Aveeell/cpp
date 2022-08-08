@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:52:25 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 11:52:26 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/08 15:08:01 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	{
 		Harl harl;
 		std::string level[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
-		int		i;
+		int i;
 
 		for (i = 0; i < 4; i++)
 			if (level[i] == argv[1])
