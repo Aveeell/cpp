@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:54:06 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 11:54:07 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/09 11:42:33 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ int	main()
 	std::cout << std::endl;
 
 	DiamondTrap five("D14M0ND-TP");
+	five.get();
 	std::cout << std::endl;
 
 	five.whoAmI();
