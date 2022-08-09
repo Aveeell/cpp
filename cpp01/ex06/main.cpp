@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:52:25 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 15:08:01 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/09 11:55:09 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,13 @@ int main(int argc, char **argv)
 		switch (i)
 		{
 			case (0):
-				harl.complain(argv[1]);
-				break;
+				harl.complain("DEBUG");
 			case (1):
-				harl.complain(argv[1]);
-				break;
+				harl.complain("INFO");
 			case (2):
-				harl.complain(argv[1]);
-				break;
+				harl.complain("WARNING");
 			case (3):
-				harl.complain(argv[1]);
+				harl.complain("ERROR");
 				break;
 			default:
 				harl.complain(argv[1]);
