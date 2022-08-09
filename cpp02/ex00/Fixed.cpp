@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:52:31 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 11:52:32 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/09 12:17:51 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ Fixed::Fixed()
 
 Fixed::Fixed(const Fixed &old)
 {
-	this->value = old.value;
 	std::cout << "Copy constructor for " << this <<std::endl;
+	this->value = old.getRawBits();
 }
 
 Fixed::~Fixed() 
