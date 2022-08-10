@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:53:53 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/09 11:43:12 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/10 12:52:13 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,9 @@ void DiamondTrap::get()
 void DiamondTrap::whoAmI()
 {
 	std::cout << "whoAmI(): " << this->name << " || " << ClapTrap::name << std::endl;
+}
+
+void DiamondTrap::attack(const std::string &target)
+{
+	ScavTrap::attack(target);
 }

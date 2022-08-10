@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:53:55 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/09 11:02:38 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/10 12:52:21 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		~DiamondTrap();
 		void whoAmI(); //This member function will display both its name and its ClapTrap name.
 		void get();
-		friend void ScavTrap::attack(const std::string &target);
+		void attack(const std::string &target);
 };
 
 #endif
