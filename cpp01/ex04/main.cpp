@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:52:06 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 11:52:07 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/10 12:55:11 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 		}
 		while (file.get(c))
 			content.push_back(c);
-		while((i = content.find(str1)) != -1)
+		while((i = content.find(str1)) != -1 && str1 != str2)
 		{
 			content.erase(i, str1.length());
 			content.insert(i, str2);
