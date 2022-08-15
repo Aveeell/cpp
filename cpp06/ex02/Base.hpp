@@ -1,35 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/08 11:54:06 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/15 10:24:11 by jerrok           ###   ########.fr       */
+/*   Created: 2022/08/15 13:42:21 by jerrok            #+#    #+#             */
+/*   Updated: 2022/08/15 13:47:08 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "DiamondTrap.hpp"
+#include <iostream>
 
-int	main()
+class Base
 {
-	ClapTrap one("CL4P-TP");
-	ClapTrap two("CLAP-9000");
-	std::cout << std::endl;
-	
-	ScavTrap three("SC4V-TP");
-	FragTrap four("FR4G-TP");
-	std::cout << std::endl;
-
-	DiamondTrap five("D14M0ND-TP");
-	five.get();
-	std::cout << std::endl;
-
-	five.whoAmI();
-	std::cout << std::endl;
-
-	five.attack("CL4P-TP");
-	std::cout << std::endl;
-	return 0;
-}
+	public:
+		virtual ~Base();
+};

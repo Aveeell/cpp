@@ -5,31 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/08 11:54:06 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/15 10:24:11 by jerrok           ###   ########.fr       */
+/*   Created: 2022/08/15 13:44:51 by jerrok            #+#    #+#             */
+/*   Updated: 2022/08/15 13:48:01 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "DiamondTrap.hpp"
+#include "A.hpp"
+#include "B.hpp"
+#include "C.hpp"
 
-int	main()
+Base *generate()
 {
-	ClapTrap one("CL4P-TP");
-	ClapTrap two("CLAP-9000");
-	std::cout << std::endl;
 	
-	ScavTrap three("SC4V-TP");
-	FragTrap four("FR4G-TP");
-	std::cout << std::endl;
+}
 
-	DiamondTrap five("D14M0ND-TP");
-	five.get();
-	std::cout << std::endl;
+void identify(Base *p)
+{
+	
+}
 
-	five.whoAmI();
-	std::cout << std::endl;
+void idenify(Base &p)
+{
+	
+}
 
-	five.attack("CL4P-TP");
-	std::cout << std::endl;
+int main()
+{
 	return 0;
 }

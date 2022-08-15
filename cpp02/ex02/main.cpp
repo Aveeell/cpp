@@ -6,100 +6,12 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:52:56 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 13:02:25 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/15 10:25:49 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-
-// 	std::cout << std::endl << std::endl << std::endl;
-// 	Fixed		e;
-// 	Fixed		f(10);
-// 	Fixed		g(2.2f);
-// 	std::cout << "f is " << f.toFloat() << " as float" << std::endl;
-// 	std::cout << "f is " << g.toFloat() << " as float" << std::endl;
-// 	std::cout << "g is " << f.toInt() << " as integer" << std::endl;
-// 	std::cout << "g is " << g.toInt() << " as integer" << std::endl;
-// 	e = g + f;
-// 	std::cout << std::endl << std::endl << std::endl;
-// 	std::cout << "e is " << e.toFloat() << " as float" << std::endl;
-// 	std::cout << "e is " << e.toInt() << " as integer" << std::endl;
-
-// 	e = e + f;
-// 	std::cout << std::endl << std::endl << std::endl;
-// 	std::cout << "e is " << e.toFloat() << " as float" << std::endl;
-// 	std::cout << "e is " << e.toInt() << " as integer" << std::endl;
-
-
-// 	e = e - f;
-// 	std::cout << std::endl << std::endl << std::endl;
-// 	std::cout << "e is " << e.toFloat() << " as float" << std::endl;
-// 	std::cout << "e is " << e.toInt() << " as integer" << std::endl;
-
-// 	e = f * f;
-// 	std::cout << std::endl << std::endl << std::endl;
-// 	std::cout << "e is " << e.toFloat() << " as float" << std::endl;
-// 	std::cout << "e is " << e.toInt() << " as integer" << std::endl;
-
-// 	e = f / f;
-// 	std::cout << std::endl << std::endl << std::endl;
-// 	std::cout << "e is " << e.toFloat() << " as float" << std::endl;
-// 	std::cout << "e is " << e.toInt() << " as integer" << std::endl;
-
-// 	std::cout << "10 > 2 = " << (f > g) << std::endl;
-// 	std::cout << "2 > 10 = " << (g > f) << std::endl;
-
-// 	std::cout << "10 < 2 = " << (f < g) << std::endl;
-// 	std::cout << "2 < 10 = " << (g < f) << std::endl;
-
-// 	std::cout << "10 >= 2 = " << (f >= g) << std::endl;
-// 	std::cout << "2 >= 10 = " << (g >= f) << std::endl;
-
-// 	std::cout << "2 >= 10 = " << (g >= f) << std::endl;
-// 	std::cout << "2 <= 10 = " << (g <= f) << std::endl;
-
-// 	std::cout << "10 == 2 = " << (f == g) << std::endl;
-// 	std::cout << "10 == 2 = " << (f == g) << std::endl;
-// 	std::cout << "10 == 10 = " << (f == f) << std::endl;
-
-// 	std::cout << "10 != 2 = " << (f == g) << std::endl;
-// 	std::cout << "10 != 2 = " << (f == g) << std::endl;
-// 	std::cout << "10 != 10 = " << (f == f) << std::endl;
-
-// 	Fixed	w(42.42f);
-// 	std::cout << "w = " << w.toFloat() << std::endl;
-// 	std::cout << "w = " << w.toInt() << std::endl;
-// 	++w;
-// 	std::cout << "w++ = " << w.toFloat() << std::endl;
-// 	std::cout << "w++ = " << w.toInt() << std::endl;
-// 	++w;
-// 	std::cout << "w++ = " << w.toFloat() << std::endl;
-// 	std::cout << "w++ = " << w.toInt() << std::endl;
-// 	w++;
-// 	std::cout << "w++ = " << w.toFloat() << std::endl;
-// 	std::cout << "w++ = " << w.toInt() << std::endl;
-// 	std::cout << w << std::endl;
-// 	std::cout << w++ << std::endl;
-// 	std::cout << w << std::endl;
-// 	std::cout << ++w << std::endl;
-// 	std::cout << w << std::endl;
-// 	std::cout << "w++ = " << w.toFloat() << std::endl;
-// 	std::cout << "w++ = " << w.toInt() << std::endl;
-
-// 	e = e.min(f, g);
-// 	std::cout << "min " << f << " vs " << g << " = " << e << std::endl;
-// 	e = e.max(f, g);
-// 	std::cout << "max " << f << " vs " << g << " = " << e << std::endl;
-	
-// 	const Fixed	aa(1);
-// 	const Fixed	bb(3.141f);
-// 	const Fixed cc = cc.min(aa, bb);
-// 	std::cout << "min " << aa << " vs " << bb << " = " << cc << std::endl;
-// 	const Fixed dd = dd.max(aa, bb);
-// 	std::cout << "max " << aa << " vs " << bb << " = " << dd << std::endl;
-// 	return (0);
-// }
 
 void subject()
 {

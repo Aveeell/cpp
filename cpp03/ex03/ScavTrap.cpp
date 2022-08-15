@@ -6,9 +6,11 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 11:54:08 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/08 11:54:09 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/15 10:24:37 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ScavTrap.hpp"
 
 #include "ScavTrap.hpp"
 

@@ -5,31 +5,35 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/08 11:54:06 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/15 10:24:11 by jerrok           ###   ########.fr       */
+/*   Created: 2022/08/15 12:33:57 by jerrok            #+#    #+#             */
+/*   Updated: 2022/08/15 13:29:53 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "DiamondTrap.hpp"
+#include <iostream>
 
-int	main()
+typedef unsigned int uintptr_t;
+
+struct Data
 {
-	ClapTrap one("CL4P-TP");
-	ClapTrap two("CLAP-9000");
-	std::cout << std::endl;
+	int val = 13;
+	std::string str = "kekw";
+};
+
+uintptr_t serialize(Data *ptr)
+{
+	uintptr_t addr;
 	
-	ScavTrap three("SC4V-TP");
-	FragTrap four("FR4G-TP");
-	std::cout << std::endl;
+	return addr;
+}
 
-	DiamondTrap five("D14M0ND-TP");
-	five.get();
-	std::cout << std::endl;
+Data *deserialize(uintptr_t raw)
+{
+	
+}
 
-	five.whoAmI();
-	std::cout << std::endl;
-
-	five.attack("CL4P-TP");
-	std::cout << std::endl;
+int main()
+{
+	
 	return 0;
 }
