@@ -1,4 +1,4 @@
-NAME = serialize
+NAME = ident
 
 CLFAGS = -Wall -Wextra -Werror -std=c++98
 CC = c++
@@ -8,7 +8,9 @@ SRCS =	main.cpp \
 		
 
 DEPENDENSES =	Makefile \
-				
+				A.hpp \
+				B.hpp \
+				C.hpp \
 
 OBJ := $(SRCS:%.cpp=%.o)
 

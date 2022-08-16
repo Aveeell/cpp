@@ -6,15 +6,18 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 13:42:23 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/15 13:47:29 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/16 16:01:07 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef B_HPP
+#define B_HPP
 
 #include "Base.hpp"
 
 class B: public Base
 {
-	public:
-		B() { std::cout << "B created" << std::endl; };
-		~B();
+
 };
+
+#endif

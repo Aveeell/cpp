@@ -6,14 +6,19 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 13:42:21 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/15 13:47:08 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/16 15:53:26 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef BASE_HPP
+#define BASE_HPP
 
 #include <iostream>
 
 class Base
 {
 	public:
-		virtual ~Base();
+		virtual ~Base() {};
 };
+
+#endif
