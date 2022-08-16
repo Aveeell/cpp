@@ -9,7 +9,6 @@ SRCS =	main.cpp \
 
 DEPENDENSES =	Makefile \
 				
-
 OBJ := $(SRCS:%.cpp=%.o)
 
 all: $(NAME)
