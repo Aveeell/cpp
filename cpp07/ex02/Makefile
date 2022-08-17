@@ -5,7 +5,6 @@ CC = c++
 RM = rm -f
 
 SRCS =	main.cpp \
-		Array.tpp \
 
 DEPENDENSES =	Makefile \
 				Array.hpp \
