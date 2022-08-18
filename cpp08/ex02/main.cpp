@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 13:21:24 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/18 14:34:39 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/18 15:05:18 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void subjCheck()
 		++it;
 	}
 }
-#include <list>
+
 void myCheck()
 {
 	MutantStack<std::string> myStack;
