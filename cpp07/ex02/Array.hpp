@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 13:41:40 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/17 15:10:45 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/19 15:25:09 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Array
 {
 	private:
 		T *arr;
-		unsigned int size;
+		unsigned int sizeArr;
 	public:
 		Array<T>();
 		Array<T>(unsigned int n);
@@ -36,6 +36,8 @@ class Array
 				return "index out of bounds";
 			}
 		};
+
+		unsigned int size();
 };
 
 #include "Array.tpp"

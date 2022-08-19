@@ -6,21 +6,21 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:53:16 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/17 15:14:22 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/19 15:26:14 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 template <typename T>
 Array<T>::Array()
 {
-	size = 0;
+	sizeArr = 0;
 	arr = NULL;
 }
 
 template <typename T>
 Array<T>::Array(unsigned int n)
 {
-	size = n;
+	sizeArr = n;
 	if(n > 0)
 		arr = new T[n];
 	else
@@ -30,13 +30,13 @@ Array<T>::Array(unsigned int n)
 template <typename T>
 Array<T>::Array(const Array &old)
 {
-	this->size = old.size;
-	if(this->size == 0)
+	this->sizeArr = old.sizeArr;
+	if(this->sizeArr == 0)
 		arr = NULL;
 	else
 	{
-		arr = new T[this->size];
-		for(unsigned int i = 0; i < this->size; i++)
+		arr = new T[this->sizeArr];
+		for(unsigned int i = 0; i < this->sizeArr; i++)
 			this->arr[i] = old.arr[i];
 	}
 }
@@ -46,13 +46,13 @@ Array<T> &Array<T>::operator=(const Array &old)
 {
 	if(this != &old)
 	{
-		this->size = old.size;
-		if(this->size == 0)
+		this->sizeArr = old.sizeArr;
+		if(this->sizeArr == 0)
 			arr = NULL;
 		else
 		{
-			arr = new T[this->size];
-			for(unsigned int i = 0; i < this->size; i++)
+			arr = new T[this->sizeArr];
+			for(unsigned int i = 0; i < this->sizeArr; i++)
 				this->arr[i] = old.arr[i];
 		}
 	}
@@ -68,8 +68,14 @@ Array<T>::~Array()
 template <typename T>
 T &Array<T>::operator[](const int index)
 {
-	if(index >= (int)this->size || index < 0)
+	if(index >= (int)this->sizeArr || index < 0)
 		throw IndexOutOfBoundsException();
 	else
 		return this->arr[index];
+}
+
+template <typename T>
+unsigned int Array<T>::size()
+{
+	return this->sizeArr;
 }

@@ -6,7 +6,7 @@
 /*   By: jerrok <jerrok@student.21-school.ru>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 14:06:26 by jerrok            #+#    #+#             */
-/*   Updated: 2022/08/17 14:31:49 by jerrok           ###   ########.fr       */
+/*   Updated: 2022/08/19 15:26:58 by jerrok           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int main(int, char**)
 	{
 		numbers[i] = rand();
 	}
+	std::cout << numbers.size() << std::endl;
 	delete [] mirror;//
 	return 0;
 }
