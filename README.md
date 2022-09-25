@@ -21,8 +21,6 @@ cpp_module_07 [en.subject.pdf](https://cdn.intra.42.fr/pdf/pdf/61100/en.subject.
 
 cpp_module_08 [en.subject.pdf](https://cdn.intra.42.fr/pdf/pdf/52156/en.subject.pdf)
 
-This project is about creating a simple shell.
-
 ## Installation and execution
 ```
 make
